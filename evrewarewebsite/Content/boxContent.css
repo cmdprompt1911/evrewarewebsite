@@ -1,0 +1,23 @@
+﻿
+.bc_container {
+    width:960px;
+}
+.bc_one_fourth {
+    width: 24%;
+    float: left;
+}
+.bc_icon {
+    width: 20%;
+    float: left;
+    margin: 1px;
+    
+}
+.bc_service {
+    width: 78%;
+    float: right;
+    overflow: hidden;
+    margin: 1px;
+}
+.bc_spacer {
+    clear: both;
+}

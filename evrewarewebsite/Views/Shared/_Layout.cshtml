@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        
+
+        <link href="~/Content/themes/default/default.css" rel="stylesheet" media="screen" />
+        <link href="~/Content/themes/light/light.css" rel="stylesheet" media="screen" />
+        <link href="~/Content/themes/dark/dark.css" rel="stylesheet" media="screen" />
+        <link href="~/Content/themes/bar/bar.css" rel="stylesheet" media="screen" />
+        <link href="~/Content/nivo-slider.css" rel="stylesheet" media="screen" />
+        <link href="~/Content/style.css" rel="stylesheet" media="screen" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">
+                        <img src="~/Images/evrewarers.png" width="300px" height="75px" /></p>
+                    
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Search Reviews", "SearchReviews", "Reviews")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - Evreware, LLC</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/backbone")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/jquery.nivo.slider.js"></script>
+        <script src="~/Scripts/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('#slider').nivoSlider({
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 4000, // How long each slide will show
+                    startSlide: 0, // Set starting Slide (0 index)
+                    directionNav: true, // Next & Prev navigation
+                    controlNav: false, // 1,2,3... navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: true // Stop animation while hovering
+                });
+            });
+            </script>
+    </body>
+</html>
