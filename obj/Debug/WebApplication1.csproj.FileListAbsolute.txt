@@ -1,0 +1,4 @@
+c:\users\cmd-ltl-dvl\documents\visual studio 2012\Projects\evrewareplaceholder\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\users\cmd-ltl-dvl\documents\visual studio 2012\Projects\evrewareplaceholder\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\users\cmd-ltl-dvl\documents\visual studio 2012\Projects\evrewareplaceholder\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\users\cmd-ltl-dvl\documents\visual studio 2012\Projects\evrewareplaceholder\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

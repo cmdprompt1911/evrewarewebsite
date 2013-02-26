@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <p style="text-align: center; text-indent: -50px;">
-        <img alt="Evreware log" class="auto-style1" src="Images/evrewarers.png" /></p>
+        <p style="text-align: center; text-indent: -10px;">
+        <img alt="Evreware log" class="auto-style1" src="Images/evrewarep.jpg" /></p>
     <p class="e_h2">
         A Market Inteligence Company</p>
     <p class="e_h1">
